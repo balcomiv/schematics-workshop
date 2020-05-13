@@ -13,5 +13,12 @@ export function schematicStarter(_options: any): Rule {
     // todo: use the url() function to retrieve the source from the './files' directory
 
     // todo: use the apply() function to apply rules (empty for now)
+
+    //  Testing
+    const logger = context.logger;
+
+    logger.debug("This is a debug message");
+
+    return tree;
   };
 }
