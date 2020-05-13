@@ -11,14 +11,16 @@ export function schematicStarter(_options: any): Rule {
     const rules: Rule[] = [];
 
     // todo: use the url() function to retrieve the source from the './files' directory
+    const source = url("./files");
 
-    // todo: use the apply() function to apply rules (empty for now)
+    // todo: use the apply() function to apply rules (empty for now) and invoke it with the context
+    return apply(source, rules)(context);
 
-    //  Testing
-    const logger = context.logger;
-
-    logger.debug("This is a debug message");
-
-    return tree;
+    //  Context Testing
+    // context.logger.debug("debug");
+    // context.logger.info("info");
+    // context.logger.warn("warn");
+    // context.logger.error("error");
+    // return tree;
   };
 }
