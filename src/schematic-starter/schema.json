@@ -3,6 +3,14 @@
   "id": "SchematicsStarter",
   "title": "Options Schema",
   "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Name of the component",
+      "default": "ng-conf",
+      "x-prompt": "Enter the name of the component"
+    }
+  },
   "required": [],
   "additionalProperties": false
 }
